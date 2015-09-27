@@ -21,6 +21,10 @@
 		A251E5D71BB76B19007D2FF9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A251E5D61BB76B19007D2FF9 /* CFNetwork.framework */; };
 		A251E5D91BB76B26007D2FF9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A251E5D81BB76B26007D2FF9 /* Security.framework */; };
 		A251E5DB1BB76B5B007D2FF9 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A251E5DA1BB76B5B007D2FF9 /* libicucore.tbd */; };
+		A2E572101BB7EB5A00C06260 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E5720F1BB7EB5A00C06260 /* ReceiveViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A2E572121BB7EB8B00C06260 /* SecceedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E572111BB7EB8B00C06260 /* SecceedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A2E572141BB7FC4F00C06260 /* NymiHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E572131BB7FC4F00C06260 /* NymiHandlerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A2E5721A1BB8052F00C06260 /* NymiHandlerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2E572191BB8052F00C06260 /* NymiHandlerViewController.mm */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,11 @@
 		A251E5D61BB76B19007D2FF9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A251E5D81BB76B26007D2FF9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A251E5DA1BB76B5B007D2FF9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A2E5720F1BB7EB5A00C06260 /* ReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		A2E572111BB7EB8B00C06260 /* SecceedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecceedViewController.swift; sourceTree = "<group>"; };
+		A2E572131BB7FC4F00C06260 /* NymiHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NymiHandlerViewController.swift; sourceTree = "<group>"; };
+		A2E572181BB8052F00C06260 /* NymiHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NymiHandlerViewController.h; sourceTree = "<group>"; };
+		A2E572191BB8052F00C06260 /* NymiHandlerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NymiHandlerViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +105,9 @@
 		A251E58A1BB7435C007D2FF9 /* NymiPay */ = {
 			isa = PBXGroup;
 			children = (
+				A2E572151BB7FC5800C06260 /* Controller */,
 				A251E59F1BB7506F007D2FF9 /* NymiApi.h */,
 				A251E58B1BB7435C007D2FF9 /* AppDelegate.swift */,
-				A251E58D1BB7435C007D2FF9 /* ViewController.swift */,
 				A251E58F1BB7435C007D2FF9 /* Main.storyboard */,
 				A251E5921BB7435C007D2FF9 /* Assets.xcassets */,
 				A251E5941BB7435C007D2FF9 /* LaunchScreen.storyboard */,
@@ -107,8 +116,21 @@
 				A251E5A21BB7526A007D2FF9 /* NymiPay-Bridging-Header.h */,
 				A251E5A71BB75926007D2FF9 /* NymiHandler.h */,
 				A251E5A81BB75926007D2FF9 /* NymiHandler.mm */,
+				A2E572181BB8052F00C06260 /* NymiHandlerViewController.h */,
+				A2E572191BB8052F00C06260 /* NymiHandlerViewController.mm */,
 			);
 			path = NymiPay;
+			sourceTree = "<group>";
+		};
+		A2E572151BB7FC5800C06260 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A251E58D1BB7435C007D2FF9 /* ViewController.swift */,
+				A2E572131BB7FC4F00C06260 /* NymiHandlerViewController.swift */,
+				A2E5720F1BB7EB5A00C06260 /* ReceiveViewController.swift */,
+				A2E572111BB7EB8B00C06260 /* SecceedViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		D5A343747444DD8AC4E75C67 /* Frameworks */ = {
@@ -245,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E5721A1BB8052F00C06260 /* NymiHandlerViewController.mm in Sources */,
 				A251E59E1BB744E6007D2FF9 /* HTTPRequest.swift in Sources */,
+				A2E572121BB7EB8B00C06260 /* SecceedViewController.swift in Sources */,
+				A2E572141BB7FC4F00C06260 /* NymiHandlerViewController.swift in Sources */,
 				A251E58E1BB7435C007D2FF9 /* ViewController.swift in Sources */,
+				A2E572101BB7EB5A00C06260 /* ReceiveViewController.swift in Sources */,
 				A251E58C1BB7435C007D2FF9 /* AppDelegate.swift in Sources */,
 				A251E5A91BB75926007D2FF9 /* NymiHandler.mm in Sources */,
 			);
@@ -294,6 +320,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -313,6 +340,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = NymiPay;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -338,6 +366,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -350,6 +379,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = NymiPay;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
