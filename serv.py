@@ -9,7 +9,7 @@ def hello():
 
 @app.route('/test', methods = ['POST'])
 def test():
-	return request.data['hello']
+	return request.form['hello']
 
 if __name__ == '__main__':
 	app.run(debug=True)
